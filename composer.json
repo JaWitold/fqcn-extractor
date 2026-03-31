@@ -1,0 +1,28 @@
+{
+  "name": "jawitold/fqcn-extractor",
+  "description": "A lightweight PHP utility to extract the Fully Qualified Class Name (FQCN) from a PHP source file using the built-in tokenizer.",
+  "keywords": ["php", "fqcn", "extractor", "namespace", "class-name", "tokenizer"],
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "JaWitold\\FqcnExtractor\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JaWitold\\FqcnExtractor\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.94",
+    "phpstan/phpstan": "^2.1"
+  },
+  "authors": [
+    {
+      "name": "JaWitold"
+    }
+  ]
+}
