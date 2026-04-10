@@ -6,10 +6,10 @@ namespace JaWitold\FqcnExtractor;
 
 class FqcnExtractor
 {
-    public function extract(string $filePath): string
+    public function extract(string $filePath): ?string
     {
         if (false === $content = file_get_contents($filePath)) {
-            return '';
+            return null;
         }
 
         $namespace = '';
@@ -48,6 +48,6 @@ class FqcnExtractor
             }
         }
 
-        return '';
+        return null;
     }
 }
